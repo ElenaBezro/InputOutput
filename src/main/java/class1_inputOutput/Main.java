@@ -20,13 +20,12 @@ public class Main {
     public static void exercise3(File textFile) {
         File outputFile = new File("output.txt");
 
-        try (Scanner reader = new Scanner(textFile);
+        try (FileReader reader = new FileReader(textFile);
              FileWriter writer = new FileWriter(outputFile)) {
 
-            while (reader.hasNextLine()) {
-                String data = reader.nextLine();
-                System.out.println(data);
-                writer.write(data);
+            int c;
+            while ((c = reader.read()) != -1) {
+                writer.write(c);
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
