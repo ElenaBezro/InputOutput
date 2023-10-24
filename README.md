@@ -1,101 +1,10 @@
 Morning session
 
-Exercise 1: Counting Words in a File
-Create a Java program that reads a text file and counts the number of words in it.
-
-Bonus: Extend the program to display the frequency of each word in the text.
-
-Exercise 2: Reading User Input until 'Exit'
-Create a program where users can keep entering strings into the console. The program should terminate when the user types 'Exit'.
-
-Bonus: Store all the entered strings in an ArrayList and, upon exit, write all the strings to a file named "userInputs.txt".
-
-Exercise 3: Appending to a File
-Create a program that allows the user to add more content to an existing file without overwriting its previous content.
-
-Bonus: Before appending, check if the content already exists in the file. If it does, notify the user instead of appending.
-
-Exercise 4: Reading a Properties File
-Create a program that reads key-value pairs from a .properties file and prints them to the console.
-
-Bonus: Allow the user to search for a specific key and display its corresponding value, notifying the user if the key doesn't exist.
-
-Exercise 5: Creating Directories
-Create a program that allows users to specify a path, and the program should create a directory at that specified location.
-
-Bonus: Allow the creation of nested directories based on user input, like "folder/subfolder/subsubfolder".
-
-Evening Session
-
-
-Exercise 1
-Create a Java program that collects the user's:
-
-- name
-- age
-- email address
-- phone number
-
-Exercise 2
-  Implement error handling to ensure that the age input is a positive
-  integer.
-
-  Q:
-  What could go wrong if we didn’t do this type of handling?
-
-  Exercise 3
-  Display the user's information in the console.
-
-  Q:
-  Where else could we display this? How?
-
-  Exercise 4
-Allow the user to input their address and write it to a text file using
-FileWriter.
-
-Exercise 5
-    Read and display the user's name, age, email, and address from the file
-    using FileReader.
-
-    Q:
-    What if the file is corrupted?
-    What if the file is readable but not properly formatted?
-    How can we prevent this?
-
-    Exercise 6
-
-    Implement a feature that calculates and displays the user's birth year
-    based on their age and the current year.
-
-    Exercise 7
-    Create a function that allows the user to input their favorite book
-    title, author, and publication year.
-
-    Display this information alongside their name, age, and other data.
-
-    Q:
-    How do we structure the data about books?
-
-    Exercise 8
-
-    Create a function that validates the email address entered by the user
-    to ensure it has a valid format (e.g., contains "@" and ".")
-
-    Q:
-    Is the validation implemented good enough? Is there a better way of
-    doing it?
-
-    Exercise 9
-
-    Implement a feature that asks the user for their favorite color and
-    displays it.
-
-    Q:
-    Could we pre-define colors and ask them to choose by not typing the
-    color itself?
-
-    Exercise 10
-
-    Create a summary report at the end of the program that displays all
-    the user's entered information, including name, age, email, phone
-    number, birth year, gender, and favorite color.
+Exercise 1: Write a Java program that reads a text file named "input.txt" using FileInputStream and displays its contents to the console.
+Exercise 2: Enhance the program from Exercise 1 to handle exceptions gracefully. Implement error handling to catch and display any FileNotFoundException that may occur when attempting to read the file.
+Exercise 3: Create a Java program that reads a binary file named "image.jpg" using FileInputStream and displays its content to the console. This exercise demonstrates reading binary data.
+Exercise 4: Extend the program from Exercise 3 to create a new binary file named "copy_image.jpg" using FileOutputStream and write the content of "image.jpg" to the new file. Ensure that the new file is a copy of the original.
+Exercise 5: Implement a program that reads a CSV file named "data.csv" using FileInputStream. Parse the CSV data and display it as a table in the console.
+Exercise 6: Modify the program from Exercise 5 to handle exceptions. Implement error handling to catch and display any IOException that may occur while reading the file.
+Exercise 7: Create a Java program that reads a large text file (e.g., "large_data.txt") in chunks using a buffer. Display the contents of the file in chunks, and specify the buffer size.
+Exercise 8: Enhance the program from Exercise 7 to measure and display the time it takes to read the entire large file in milliseconds.
