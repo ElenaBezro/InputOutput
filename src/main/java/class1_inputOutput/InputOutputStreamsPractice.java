@@ -64,44 +64,9 @@ public class InputOutputStreamsPractice {
             System.out.println(e.getMessage());
         }
     }
-//
-//    Exercise 1
-//
-//    Create a Java program that collects the user's:
-//
-//  - name
-//- age
-//- email address
-//- phone number
-//
-//            Exercise 2
-//
-//    Implement error handling to ensure that the age input is a positive
-//    integer.
-//
-//    Q:
-//    What could go wrong if we didn’t do this type of handling?
-//    Exercise 3
-//
-//    Display the user's information in the console.
-//
-//    Q:
-//    Where else could we display this? How?
-//Exercise 4
-//
-//Allow the user to input their address and write it to a text file using
-//FileWriter.
-//    Exercise 5
-//
-//    Read and display the user's name, age, email, and address from the file
-//    using FileReader.
-//
-//    Q:
-//    What if the file is corrupted?
-//    What if the file is readable but not properly formatted?
-//    How can we prevent this?
-//
-//    Exercise 6
+
+// TODO:
+//Exercise 6
 //
 //    Implement a feature that calculates and displays the user's birth year
 //    based on their age and the current year.
@@ -135,6 +100,5 @@ public class InputOutputStreamsPractice {
 //    Create a summary report at the end of the program that displays all
 //    the user's entered information, including name, age, email, phone
 //    number, birth year, gender, and favorite color.
-
 
 }
