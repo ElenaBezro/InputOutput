@@ -94,5 +94,18 @@ public class Main {
         exercise3(textFile);
         exercise4(textFile);
         exercise5(csvFile);
+        System.out.println("******");
+
+        System.out.println("Second part of the lesson");
+        Scanner sc = new Scanner(System.in);
+        InputOutputStreams ioStream = new InputOutputStreams();
+        ioStream.getWordsCount(textFile);
+        ioStream.readInputUntilExitCommand(sc);
+        ioStream.appendToFile(sc);
+        ioStream.appendToFileBonus(sc);
+        ioStream.printPropertiesFileContent();
+        ioStream.printPropertiesFileContentBonus("rem");
+        ioStream.createDirectory();
+        ioStream.createDirectories();
     }
 }
