@@ -75,12 +75,11 @@ public class FileReaderWriter {
         }
         return  null;
     }
-//TODO: the result of sum is incorrect!
     public void printNumbersFromFileSum() {
         List<Integer> numbers = readNumbersFromFile();
         int sum = numbers.stream().reduce(0, (acc, number) -> acc + number);
         try (FileWriter fw = new FileWriter("output_numbers.txt")) {
-            fw.write(+sum);
+            fw.write(Integer.toString(sum));
         }
         catch (IOException e) {
             System.out.println(e.getMessage());
