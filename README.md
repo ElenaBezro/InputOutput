@@ -95,3 +95,52 @@ Duplicate word: is
 
 Evening Session
 
+Exercise 1
+
+Modify your program to create a list of users' names, ages, emails,
+phone numbers, and addresses. Save it to a CSV file using FileWriter.
+Each line should represent one user's data.
+
+Exercise 2
+
+Implement reading and displaying the user data from the CSV file
+using FileReader.
+
+Exercise 3
+
+Allow users to add new entries to the CSV file and ensure that the file
+remains properly formatted.
+
+Exercise 4
+
+Create a feature that allows the user to search for a user's data by
+name, email, or phone number and display the results.
+
+Exercise 5
+
+Implement a sorting mechanism to sort users in the CSV file based on
+their ages or names.
+
+Exercise 6
+
+Create a function that allows the user to update their address in the
+CSV file and display the updated information.
+
+Exercise 7
+
+Implement a feature that allows users to remove a specific user's data
+from the CSV file based on their name or email.
+
+Exercise 8
+
+Add a menu system that lets the user choose different options (e.g.,
+add a new user, search, update, delete) within the program.
+
+Exercise 9
+
+Implement a function to count and display the total number of users
+in the CSV file.
+
+Exercise 10
+
+Create a CSV report file with all user data, including headers.
