@@ -19,5 +19,79 @@ Exercise 6: Error Handling
 Introduce error handling by asking your students to modify their programs to handle exceptions that may occur during file operations (e.g., FileNotFoundException, IOException).
 Encourage them to use try-catch blocks to gracefully handle these exceptions.
 
+Morning session 
+Second part
+
+Exercise: Text Collector with Uniqueness
+
+Objective:
+Develop an application that continuously collects textual input from a user, ensuring that duplicate words aren't saved. When the user types "Export", save all the unique words to the "output.txt" file. If the user runs the app multiple times, always ensure that the previous inputs are maintained, and show the existing content to the user upon starting the app.
+
+Steps:
+
+When the app starts, read the "output.txt" file (if it exists) and display its content to the user.
+Continuously prompt the user for text input.
+Check the word for uniqueness against previously entered words and the existing file content.
+If the user types "Export", append the new unique words to the "output.txt" file.
+If the app is run again, repeat the above steps.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Exercise 2: Line Counter
+
+Objective: Create a Java program that reads a text file and counts the number of lines in it.
+
+Instructions:
+
+Use the FileReader and BufferedReader classes to read the text file line by line.
+Count the number of lines and display it to the user.
+
+Sample Input:
+Hello world!
+How are you today?
+It's a beautiful day.
+
+Sample Output:
+Total number of lines: 3
+
+------------------------------------------------------------------------------------------------------------------------
+
+Exercise 3: Convert to Uppercase
+
+Objective: Create a Java program that reads a text file, converts all of its content to uppercase, and then writes the result to a new file.
+
+Instructions:
+
+Read the input text file using FileReader.
+Convert each line to uppercase.
+Write the converted lines to a new output file using FileWriter.
+
+Sample Input:
+Hello world!
+
+Sample Output (in a new file):
+HELLO WORLD!
+
+------------------------------------------------------------------------------------------------------------------------
+
+Exercise 4: Duplicate Word Finder
+
+Objective: Create a Java program that reads a text file and identifies any word that appears more than once.
+
+Instructions:
+
+Read the text file and split it into words.
+Use a Set or Map to help identify duplicate words.
+Display any duplicates to the user.
+
+Sample Input:
+Java is fun. Java is powerful.
+
+Sample Output:
+arduino
+
+Duplicate word: Java
+Duplicate word: is
+
 Evening Session
 
