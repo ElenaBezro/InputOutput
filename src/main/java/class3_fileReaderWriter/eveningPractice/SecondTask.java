@@ -8,10 +8,10 @@ public class SecondTask {
     private static final String SCV_FILE = "users.csv";
 
     public static void main(String[] args) {
-        displayUserDataIntoFile();
+        displayUserDataFromFile();
     }
 
-    public static void displayUserDataIntoFile() {
+    public static void displayUserDataFromFile() {
         try(FileReader fr = new FileReader(SCV_FILE);
             BufferedReader br = new BufferedReader(fr)) {
 
