@@ -188,7 +188,7 @@ public class FileReaderWriter {
                 }
             }
             wordsToCountMap.entrySet().stream()
-                    .filter(elem -> elem.getValue() > 0)
+                    .filter(elem -> elem.getValue() > 1)
                     .forEach(elem -> System.out.println("Duplicate word: " + elem.getKey()));
         } catch (IOException e) {
             System.out.println(e.getMessage());
