@@ -35,12 +35,13 @@ public class SerializeObject {
     public static void main(String[] args) {
         Person person = new Person("Lena", 30, "berlin");
         serialize(person);
-        Person desirialisedPerson = (Person) deserialize();
-        System.out.println(desirialisedPerson);
+        Person deserialisedPerson = (Person) deserialize();
+        System.out.println("deserialisedPerson: " + deserialisedPerson);
+
 
         Vehicle car = new Vehicle("BMW", "X5", 2023);
         serialize(car);
-        Vehicle desirialisedVehicle = (Vehicle) deserialize();
-        System.out.println(desirialisedVehicle);
+        Vehicle deserialisedVehicle = (Vehicle) deserialize();
+        System.out.println(deserialisedVehicle);
     }
 }
