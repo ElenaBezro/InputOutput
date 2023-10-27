@@ -5,12 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise2 implements Serializable {
-    //Exercise 2: Array Deserialization
-    //Objective:
-    //Learn how to deserialize an array of objects from a file.
-    //Create a class called Student with fields for id (int) and grade (double).
-    //Serialize an array of Student objects to a file.
-    //Deserialize the array from the file and print each student's id and grade.
     private final static String SER_FILE = "student.ser";
     private List<Student> students = new ArrayList<>();
 
