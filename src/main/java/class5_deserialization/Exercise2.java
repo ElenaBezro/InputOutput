@@ -30,18 +30,18 @@ public class Exercise2 implements Serializable {
         @Override
         public String toString() {
             return "Student{" +
-                    "id=" + id  +
+                    "id=" + id +
                     ", grade=" + grade +
                     '}';
         }
 
     }
+
     public void serialize() {
-        try(FileOutputStream fos = new FileOutputStream(SER_FILE);
-            ObjectOutputStream out = new ObjectOutputStream(fos)) {
+        try (FileOutputStream fos = new FileOutputStream(SER_FILE);
+             ObjectOutputStream out = new ObjectOutputStream(fos)) {
             out.writeObject(students);
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
@@ -49,10 +49,12 @@ public class Exercise2 implements Serializable {
     public List<Student> deserialize() {
         List<Student> students = null;
 
-        try(FileInputStream fis = new FileInputStream(SER_FILE);
-            ObjectInputStream in = new ObjectInputStream(fis)){
-            students =(List<Student>) in.readObject();
-        }catch (IOException e) {
+        try (FileInputStream fis = new FileInputStream(SER_FILE);
+             ObjectInputStream in = new ObjectInputStream(fis)) {
+            students = (List<Student>) in.readObject();
+        } catch (FileNotFoundException e) {
+            System.out.println("No such file");
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         } catch (ClassNotFoundException e) {
             System.out.println(e.getMessage());
