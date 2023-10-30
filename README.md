@@ -80,6 +80,56 @@ Implement error handling for file operations.
 Implement a search functionality in the Zoo class to search for an animal by name.
 Add a serialVersionUID to the Animal, Mammal, Bird, and Zoo classes. Hint: https://www.baeldung.com/java-serial-version-uid
 
-
 Evening Session
 
+Exercise 1
+
+Extend your program to allow deserialization of multiple Student
+objects from the file and display their attributes, including hobbies.
+
+Exercise 2
+
+Implement a search function that allows users to find and display the
+details of a specific student by name, student ID, or hobby.
+
+Exercise 3
+
+Handle exceptions related to deserialization and searching, ensuring
+the program remains robust.
+
+Exercise 4
+
+Add the ability to delete a student's record from the file if requested
+by the user.
+
+Exercise 5
+
+Create a summary report that calculates and displays the average
+GPA of all students and lists their hobbies.
+
+Exercise 6
+
+Implement a feature that allows the user to update a student's
+information, including their courses taken and grades, in the program.
+Serialize the updated data.
+
+Exercise 7
+
+Create a function that lists all students who have taken a specific
+course (e.g., "Math") along with their grades.
+
+Exercise 8
+
+Implement a function that displays a summary of the number of
+students in each grade range (e.g., A, B, C, etc.) based on their GPAs.
+
+Exercise 9
+
+Add a confirmation step before deleting a student's record from the
+file to ensure the user's intent.
+
+Exercise 10
+
+Create a feature that exports a summary report to a text file,
+including the average GPA, the number of students, and other
+relevant statistics.
