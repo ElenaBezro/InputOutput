@@ -1,6 +1,8 @@
 package class5_deserialization.animalKingdom;
 
-public class Mammal extends Animal {
+import java.io.Serializable;
+
+public class Mammal extends Animal implements Serializable {
     @Override
     public String sound() {
         return "Mammal Sound!";

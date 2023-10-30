@@ -1,16 +1,11 @@
 package class5_deserialization.animalKingdom;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Zoo implements SerializableInterface {
-    //In the main class:
-    //        Create a few instances of Mammal and Bird.
-    //        Add them to a Zoo.
-    //        Serialize the Zoo object to a file.
-    //        Deserialize the Zoo object from the file.
-    //        Display the names and sounds of the deserialized animals to ensure that they've been loaded correctly.
-    //
+public class Zoo implements SerializableInterface, Serializable {
+    public static final String ZOO_SER = "zoo.ser";
     //Bonus:
     //Extend the Animal kingdom with more types of animals (e.g., Reptile, Fish).
     //Implement error handling for file operations.
@@ -22,14 +17,30 @@ public class Zoo implements SerializableInterface {
         animals.add(animal);
     }
 
-    @Override
-    public void serialize(String filename) {
-
+    public List<Animal> getAnimals() {
+        return animals;
     }
 
     @Override
-    public void deserialize(String filename) {
+    public void serialize() {
+        try (FileOutputStream fos = new FileOutputStream(ZOO_SER);
+             ObjectOutputStream out = new ObjectOutputStream(fos)) {
+            out.writeObject(this);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
+    @Override
+    public Zoo deserialize() {
+        Zoo zoo = null;
+        try (FileInputStream fis = new FileInputStream(ZOO_SER);
+             ObjectInputStream in = new ObjectInputStream(fis)) {
+            zoo = (Zoo) in.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+        return zoo;
     }
 
     public static void main(String[] args) {
@@ -38,5 +49,8 @@ public class Zoo implements SerializableInterface {
         Animal bird = new Bird();
         zoo.addAnimal(mammal);
         zoo.addAnimal(bird);
+        zoo.serialize();
+        Zoo deserialisedZoo = zoo.deserialize();
+        deserialisedZoo.getAnimals().forEach(animal -> System.out.println(animal.sound()));
     }
 }
